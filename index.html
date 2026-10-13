@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Road to $1 Million Tracker</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-color: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --success-color: #238636;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+        .tier {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .unlock {
+            background-color: rgba(88, 166, 255, 0.1);
+            border: 1px dashed var(--accent-color);
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .milestone-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        input[type="checkbox"] {
+            margin-right: 12px;
+            margin-top: 6px;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        label {
+            cursor: pointer;
+        }
+        .target {
+            display: block;
+            font-size: 0.9em;
+            color: var(--text-muted);
+        }
+        .progress-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        #counter {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 My Road to $1 Million: Income & Milestone Tracker</h1>
+    <p>Check off your real-life progress as your income and cash savings hit each level.</p>
+
+    <!-- TIER 1 -->
+    <div class="tier">
+        <h2>🔹 Tier 1: The Cash Starter Pack (Age 13–14)</h2>
+        <p><em>Goal: Build a baseline fund using physical services or zero-adult digital work.</em></p>
+        
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl1">
+            <div>
+                <label for="lvl1"><strong>Level 1: The Double Digits ($50)</strong></label>
+                <span class="target">Target: Secure your first local gig (e.g., washing two trash cans or detailing one car).</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl2">
+            <div>
+                <label for="lvl2"><strong>Level 2: The Century Club ($100)</strong></label>
+                <span class="target">Target: Reinvest a few dollars into basic tools (like flyers, cleaner, or a Canva subscription).</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl3">
+            <div>
+                <label for="lvl3"><strong>Level 3: The Smartphone Fund ($500)</strong></label>
+                <span class="target">Target: Save enough to ensure you have independent access to a working smartphone or laptop for digital work.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl4">
+            <div>
+                <label for="lvl4"><strong>Level 4: The Micro-Business ($1,000)</strong></label>
+                <span class="target">Target: Hit your first four-figure savings mark.</span>
+            </div>
+        </div>
+
+        <div class="unlock">
+            <h3>🔓 Financial Unlock #1: The Trusted Adult Alliance</h3>
+            <div class="milestone-item">
+                <input type="checkbox" id="unlock1">
+                <div>
+                    <label for="unlock1"><strong>Milestone Check:</strong> Find a trusted adult (sibling over 18, aunt/uncle, or mentor) to help open a <strong>Custodial Bank Account</strong> so you can hold large digital payments safely.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIER 2 -->
+    <div class="tier">
+        <h2>🔹 Tier 2: Scaling the Hustle (Age 14–15)</h2>
+        <p><em>Goal: Move from one-off chores to predictable, recurring client income.</em></p>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl5">
+            <div>
+                <label for="lvl5"><strong>Level 5: The Emergency Cushion ($2,500)</strong></label>
+                <span class="target">Target: Keep this cash safe so you never have to stress about basic personal expenses.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl6">
+            <div>
+                <label for="lvl6"><strong>Level 6: The High-Income Skill Setup ($5,000)</strong></label>
+                <span class="target">Target: Dedicate 100 hours to learning a digital skill (video editing, web speed fixes, coding).</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl7">
+            <div>
+                <label for="lvl7"><strong>Level 7: The Five-Digit Milestone ($10,000)</strong></label>
+                <span class="target">Target: You are now officially making more money than the average teenager.</span>
+            </div>
+        </div>
+
+        <div class="unlock">
+            <h3>🔓 Financial Unlock #2: Compound Interest Activation</h3>
+            <div class="milestone-item">
+                <input type="checkbox" id="unlock2">
+                <div>
+                    <label for="unlock2"><strong>Milestone Check:</strong> Have your trusted adult help open a <strong>Custodial Roth IRA</strong>. Put your first $1,000 into a broad market index fund (like the S&P 500) to let compounding begin.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIER 3 -->
+    <div class="tier">
+        <h2>🔹 Tier 3: The Automation Era (Age 16–17)</h2>
+        <p><em>Goal: Automate your income, build a digital brand, or manage a small local crew.</em></p>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl8">
+            <div>
+                <label for="lvl8"><strong>Level 8: The Vehicle / Office Fund ($25,000)</strong></label>
+                <span class="target">Target: Secure reliable transportation or high-end tech gear to scale your working speed.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl9">
+            <div>
+                <label for="lvl9"><strong>Level 9: The Halfway to Six-Figures ($50,000)</strong></label>
+                <span class="target">Target: Income generated mostly through high-ticket skills or digital assets.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl10">
+            <div>
+                <label for="lvl10"><strong>Level 10: The Six-Figure Club ($100,000)</strong></label>
+                <span class="target">Target: 10% of the way to a million before you legally even become an adult.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TIER 4 -->
+    <div class="tier">
+        <h2>👑 Tier 4: Total Legal Freedom (Age 18+)</h2>
+        <p><em>Goal: Transition everything into your own legal name and push to the final million.</em></p>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl11">
+            <div>
+                <label for="lvl11"><strong>Level 11: Legal Independence ($250,000)</strong></label>
+                <span class="target">Target: Unshackle from custodial accounts. Open your own legal LLC, business banking accounts, and primary brokerage.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl12">
+            <div>
+                <label for="lvl12"><strong>Level 12: The Half-Million ($500,000)</strong></label>
+                <span class="target">Target: Your investments should now be doing heavy lifting, growing by thousands per month automatically.</span>
+            </div>
+        </div>
+
+        <div class="milestone-item">
+            <input type="checkbox" id="lvl13">
+            <div>
+                <label for="lvl13"><strong>Level 13: THE SEVEN-FIGURE MARK ($1,000,000) 🏆</strong></label>
+                <span class="target">Target: Total legal financial freedom achieved.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRESS WIDGET -->
+    <div class="progress-container">
+        Levels Completed: <span id="counter">0 / 15</span>
+    </div>
+
+    <script>
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const counter = document.getElementById('counter');
+
+        function updateProgress() {
+            const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            counter.textContent = `${checkedCount} / ${checkboxes.length}`;
+            
+            // Save state to browser memory so it doesn't reset on refresh
+            checkboxes.forEach((box) => {
+                localStorage.setItem(box.id, box.checked);
+            });
+        }
+
+        checkboxes.forEach((box) => {
+            // Load saved state from LocalStorage
