@@ -236,18 +236,27 @@
     </div>
 
     <script>
-        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const checkboxes = Array.from(document.querySelectorAll('input[type="checkbox"]'));
         const counter = document.getElementById('counter');
 
         function updateProgress() {
-            const checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            const checkedCount = checkboxes.filter((box) => box.checked).length;
             counter.textContent = `${checkedCount} / ${checkboxes.length}`;
-            
-            // Save state to browser memory so it doesn't reset on refresh
+
             checkboxes.forEach((box) => {
-                localStorage.setItem(box.id, box.checked);
+                localStorage.setItem(box.id, String(box.checked));
             });
         }
 
         checkboxes.forEach((box) => {
-            // Load saved state from LocalStorage
+            const savedState = localStorage.getItem(box.id);
+            if (savedState !== null) {
+                box.checked = savedState === 'true';
+            }
+            box.addEventListener('change', updateProgress);
+        });
+
+        updateProgress();
+    </script>
+</body>
+</html>
